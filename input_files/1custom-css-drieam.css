@@ -1,0 +1,75 @@
+@import url(https://templates.drieam.com/templates/production/crean-lutheran/style.css);
+
+#grades_summary th.title a {
+    word-break: normal !important;
+}
+
+body.responsive_student_grades_page #grades_summary td.due {
+    white-space: normal !important;
+}
+
+.ic-Table.ic-Table--grades-summary-table th, .ic-Table.ic-Table--grades-summary-table td {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+body.responsive_student_grades_page #grades_summary td.details {
+    white-space: normal !important;
+}
+
+.external_link_icon {
+    display: none !important;
+}
+
+/* Hide Instructure's Syllabus page */
+
+li.section a.syllabus {
+    display: none;
+}
+
+#nav_edit_tab_id_1 {
+    display: none;
+}
+
+
+/*
+.slick-viewport::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+*/
+
+
+/* Responsive styling for mobile devices (screens smaller than 768px) */
+@media screen and (max-width: 768px) {
+    .responsive-table {
+        display: block;
+    }
+
+    .responsive-table thead {
+        display: none; /* Hide headers in mobile view */
+    }
+
+    .responsive-table tbody {
+        display: block;
+    }
+
+    .responsive-table tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .responsive-table td {
+        display: block;
+        border: none;
+        border-bottom: 1px solid #e0e0e0; /* Match light gray border */
+        padding: 12px; /* Match desktop padding */
+        word-wrap: break-word; /* Ensure text wraps in mobile view */
+        overflow-wrap: break-word;
+    }
+
+    .responsive-table td:first-child {
+        background-color: #1e3a8a; /* Dark blue for first column values */
+        color: white;
+    }
+}
